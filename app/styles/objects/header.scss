@@ -1,0 +1,31 @@
+header {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 46px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 25px;
+    padding: 0 20px;
+    margin: 0;
+  }
+  nav.social {
+    padding-top: 20px;
+  }
+  nav.social a {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 0 30px 0 0;
+  }
+}

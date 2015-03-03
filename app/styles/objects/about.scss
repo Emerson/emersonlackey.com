@@ -1,0 +1,22 @@
+section.about {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 220px 0 0 0;
+  text-align: center;
+  h4 {
+    text-transform: uppercase;
+    color: #231F20;
+  }
+  p {
+    color: #58595B;
+    line-height: 200%;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+  @media(max-width: 600px) {
+    padding: 100px 0 0 0;
+  }
+  @media(max-width: 360px) {
+    padding: 40px 0 0 0;
+  }
+}

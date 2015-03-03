@@ -2,7 +2,9 @@
   "predef": [
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "Autolinker",
+    "moment"
   ],
   "browser": true,
   "boss": true,

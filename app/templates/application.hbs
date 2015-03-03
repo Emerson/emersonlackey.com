@@ -1,3 +1,97 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="container">
 
-{{outlet}}
+  <header>
+    <h1>Emerson Lackey</h1>
+    <p>A full stack developer with an enthusaism for Ember, Rails, and Node.</p>
+    <nav class="social">
+      <a href="https://twitter.com/emerson_lackey" target="_blank"><i class="icon-twitter-02"></i></a>
+      <a href="https://ca.linkedin.com/in/emersonlackey" target="_blank"><i class="icon-linkedin"></i></a>
+      <a href="https://github.com/Emerson" target="_blank"><i class="icon-github"></i></a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <h4>About</h4>
+    <p>A very broad skillset that makes me an invaluable asset in almost any situation. I'm totally comfortable up and down the stack - all the way from photoshop to setting up servers. I'm constantly learning new things and have a deep interest in Javascript. I have lots of other skills, but here are some of the highlights:</p>
+  </section>
+
+  <div class="hr"></div>
+
+  <section class="updates">
+    <div class="grid">
+
+      <div class="grid__item one-third palm--one-whole">
+        <div class="padding">
+          <div class="page-header">
+            <h5>Open Source Projects</h5>
+          </div>
+          <div class="content">
+            <ul>
+              <li>
+                <h6>Twitter Proxy</h6>
+                <p>A small micro service written in Node that fetches tweets and serves tweets for easy consumption. Easy installation with Ansible, PM2, and Vagrant.</p>
+              </li>
+              <li>
+                <h6>Form Master 2000</h6>
+                <p>A simple form builder library written as an EmberCLI addon. A demo page is available online <a href="http://ember-form-master-2000.emersonlackey.com" target="_blank">here</a>.</p>
+              </li>
+              <li>
+                <h6>Flash Message 2000</h6>
+                <p>An EmberCLI addon that adds full featured flash messages to your app. You can see a demo of the project <a href="http://ember-flash-message-2000.emersonlackey.com" target="_blank">here</a>.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__item one-third palm--one-whole">
+        <div class="padding">
+          <div class="page-header">
+            <h5>Recent Tweets</h5>
+          </div>
+        </div>
+        <div class="content">
+          <ul>
+            {{#each tweet in model.tweets}}
+              {{tweet-item tweet=tweet}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid__item one-third palm--one-whole">
+        <div class="padding">
+          <div class="page-header">
+            <h5>Currently Enjoying</h5>
+          </div>
+        </div>
+        <div class="content">
+          <ul>
+            <li>
+              <h6>Ansible</h6>
+              <p>After learning the basics of <a href="http://www.ansible.com" target="_blank">Ansible</a>, I don't think I'd ever start a new project without it. It just makes things so much easier to deploy and setup.</p>
+            </li>
+            <li>
+              <h6>Vagrant</h6>
+              <p>It's gone hand-in-hand with my Ansible learning and jives with my desire to learn more about how to use and build micro-services - I'll definitly be starting my projects with <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> as the foundation.</p>
+            </li>
+            <li>
+              <h6>Ember Diff Rendering</h6>
+              <p>It's happenning, and I can't keep my eyes off the group of PR's by Tom and Yehuda that are slowly moving Ember towards <a href="https://github.com/tildeio/htmlbars/blob/idempotent-rerender/LIFECYCLE.md" target="_blank">react style diff rendering</a>.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <footer>
+    <p>Thanks for checking out my site – if you'd like to know more about me you can also view my <a href="http://resume.emersonlackey.com" target="_blank">online resume</a></p>
+  </footer>
+
+  {{outlet}}
+
+</div>

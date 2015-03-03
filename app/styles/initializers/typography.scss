@@ -1,0 +1,26 @@
+/*-- General Styles -----------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a, a:visited, a:hover {
+  color: #C72026;
+}
+
+p, ul, ol, blockquote {
+  color: #f8e2c4;
+  font-family: 'Average', Helvetica, Arial, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  max-width: 45em;
+}
+
+/*-- Specific Elements --------------------------------------------------*/
+h4 {}
+h5 {
+  text-transform: uppercase;
+}
